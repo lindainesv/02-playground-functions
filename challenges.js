@@ -9,9 +9,9 @@
 
 function compareTrue(condicao1, condicao2){
   if (condicao1 === true && condicao2 ===  true) {
-    return 'Eba! Vou sair';
+    return true;
   } else {
-    return 'Poxa não vou sair #sad';
+    return false;
   }
 }
 
