@@ -15,11 +15,10 @@ function compareTrue(condicao1, condicao2){
   }
 }
 
-console.log(compareTrue(true, false));
+// console.log(compareTrue(true, false));
 
 
 // Requisito 2
-
 function calcArea (base, height) {
 return (base * height) / 2
 }
