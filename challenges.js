@@ -20,7 +20,9 @@ console.log(compareTrue(true, false));
 
 // Requisito 2
 
-
+function calcArea (base, height) {
+return (base * height) / 2
+}
 
 
 
@@ -29,18 +31,7 @@ console.log(compareTrue(true, false));
 //a função recebe como parametro uma string 
 //retornar um array com as palavras separadas por virgula 
 
-
-
-
-let string = ['go', 'Trybe', 'foguete'];
-let splitSentence = string[1] 
-
 function splitSentence (string) {
-	splitSentence
+	return splitSentence.split('');
 }
-
-return 
- 
-
-console.log(splitSentence);
 
