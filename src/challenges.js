@@ -11,13 +11,11 @@ function compareTrue(condicao1, condicao2) {
 function calcArea(base, height) {
   return (base * height) / 2;
 }
-console.log(calcArea());
 
 // Desafio 3
 function splitSentence() {
   return splitSentence.split();
 }
-console.log(splitSentence());
 
 // Desafio 4
 function concatName() {
