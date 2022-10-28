@@ -22,12 +22,14 @@ function splitSentence() {
  function concatName(lista) {
  let vigula = ', ';
 	let juntou = lista[lista.length -1].concat(vigula, lista[0]);
-	return juntou;	
+	return juntou;
 }
 
-// Desafio 5	
-function footballPoints() {
-  // seu código aqui
+// Desafio 5	numeroDeVitorias= *3 numeroDeEmpates= *1
+function footballPoints(numeroDeVitorias, numeroDeEmpates) { 
+	let numeroDeVitoriasPeso3= (numeroDeVitorias *3);
+	let qtdDePontos = numeroDeVitoriasPeso3 + numeroDeEmpates;
+	return qtdDePontos ;
 }
 
 // Desafio 6
