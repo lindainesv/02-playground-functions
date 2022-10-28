@@ -18,11 +18,14 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+ function concatName(lista) {
+ let vigula = ', ';
+	let juntou = lista[lista.length -1].concat(vigula, lista[0]);
+	return juntou;	
 }
 
-// Desafio 5
+// Desafio 5	
 function footballPoints() {
   // seu código aqui
 }
