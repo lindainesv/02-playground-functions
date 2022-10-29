@@ -13,7 +13,6 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(frase) {
-
   return frase.split(' ');
 }
 
@@ -65,34 +64,32 @@ function highestCount(numeros) {
 	return qtsVezesRepete;
 }
 
-
 // Desafio 7
-//pesquisa: Math.abs recebe um número e retorna o valor absoluto dele
+// pesquisa: Math.abs recebe um número e retorna o valor absoluto dele
 function catAndMouse(mouse, cat1, cat2) {
-const distancia1 = (Math.abs(mouse - cat1)); 
-const distancia2 = (Math.abs(mouse - cat2));
+  const distancia1 = (Math.abs(mouse - cat1)); 
+  const distancia2 = (Math.abs(mouse - cat2));
 
-	if (distancia1 < distancia2) {
-		return 'cat1';
-	} if (distancia1 > distancia2) {
-		return 'cat2';
-	} else (distancia1 === distancia2) 
-		return 'os gatos trombam e o rato foge';
+  if (distancia1 < distancia2) {
+    return 'cat1';
+  } if (distancia1 > distancia2) {
+    return 'cat2';
+  } if (distancia1 === distancia2);
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(array) {
   let resultado = [];
-
-  for(let index of array){  
-    if(index%3 === 0 && index%5 === 0){
-    resultado.push('fizzBuzz');
-    }else if(index%3 === 0){
-      resultado.push('fizz');
-    }else if(index%5 === 0){
-      resultado.push('buzz');
-    }else if(index%3 !== 0 && index%5 !== 0){
-      resultado.push('bug!');
+  for (let index of array) {  
+  if (index % 3 === 0 && index % 5 === 0) {
+  resultado.push ('fizzBuzz');
+    } else if (index%3 === 0) {
+      resultado.push ('fizz');
+    } else if (index%5 === 0) {
+      resultado.push ('buzz');
+    } else if (index%3 !== 0 && index%5 !== 0) {
+      resultado.push ('bug!');
     }
   }
   return resultado;
