@@ -32,43 +32,13 @@ function footballPoints(numeroDeVitorias, numeroDeEmpates) {
 }
 
 // Desafio 6*************************************************
-function highestCount(numeros) {
-  let contarRepetido = 0;
-  let numeroMaisRepetido = 0;
-  let numeroAtual = 0;
-
-  for (let i in numeros) {
-    let verificarNumero = numeros[i];
-    for (let i in numeros) {
-      if (verificarNumero === numeros[i]) {
-        numeroMaisRepetido += 1;
-      }
-    }
-    if (numeroMaisRepetido > contarRepetido) {
-      contarRepetido = numeroMaisRepetido;
-      numeroAtual = i;
-    }
-    numeroMaisRepetido = 0;
-
-    let qtsVezesRepete = 0;
-    for (
-      let indexContador = 0;
-      indexContador < numeros.length;
-      indexContador += 1
-    ) {
-      if (verificarNumero === numeros[indexContador]) {
-        qtsVezesRepete += 1;
-      }
-    }
-    
-  }
-	return qtsVezesRepete;
+function highestCount() {
 }
 
 // Desafio 7
 // pesquisa: Math.abs recebe um número e retorna o valor absoluto dele
 function catAndMouse(mouse, cat1, cat2) {
-  const distancia1 = (Math.abs(mouse - cat1)); 
+  const distancia1 = (Math.abs(mouse - cat1));
   const distancia2 = (Math.abs(mouse - cat2));
 
   if (distancia1 < distancia2) {
