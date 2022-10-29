@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Desafio 1
 function compareTrue(condicao1, condicao2) {
   if (condicao1 === true && condicao2 === true) {
@@ -81,15 +82,15 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let resultado = [];
-  for (let index of array) {  
-  if (index % 3 === 0 && index % 5 === 0) {
-  resultado.push ('fizzBuzz');
-    } else if (index%3 === 0) {
-      resultado.push ('fizz');
-    } else if (index%5 === 0) {
-      resultado.push ('buzz');
-    } else if (index%3 !== 0 && index%5 !== 0) {
-      resultado.push ('bug!');
+  for (let index of array) {
+    if (index % 3 === 0 && index % 5 === 0) {
+      resultado.push('fizzBuzz');
+    } else if (index % 3 === 0) {
+      resultado.push('fizz');
+    } else if (index % 5 === 0) {
+      resultado.push('buzz');
+    } else if (index % 3 !== 0 && index % 5 !== 0) {
+      resultado.push('bug!');
     }
   }
   return resultado;
