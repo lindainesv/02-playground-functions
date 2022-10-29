@@ -31,42 +31,50 @@ function footballPoints(numeroDeVitorias, numeroDeEmpates) {
   return qtdDePontos;
 }
 
-// Desafio 6
+// Desafio 6*************************************************
 function highestCount(numeros) {
-	let contarRepetido = 0;
-	let numeroMaisRepetido = 0;
-	let numeroAtual = 0;
+  let contarRepetido = 0;
+  let numeroMaisRepetido = 0;
+  let numeroAtual = 0;
 
-	for (let i in numeros) {
-		let verificarNumero = numeros[i];
-		for (let i in numeros) {
-			if (verificarNumero === numeros[i]) {
-				numeroMaisRepetido += 1;
-			}
-		} 
-		if (numeroMaisRepetido > contarRepetido){
-			contarRepetido = numeroMaisRepetido;
-			numeroAtual = i;
-		} numeroMaisRepetido = 0;
-	
+  for (let i in numeros) {
+    let verificarNumero = numeros[i];
+    for (let i in numeros) {
+      if (verificarNumero === numeros[i]) {
+        numeroMaisRepetido += 1;
+      }
+    }
+    if (numeroMaisRepetido > contarRepetido) {
+      contarRepetido = numeroMaisRepetido;
+      numeroAtual = i;
+    }
+    numeroMaisRepetido = 0;
 
-let qtsVezesRepete = 0;
-for (let indexContador = 0; indexContador < numeros.length; indexContador +=1) {
-	if (verificarNumero === numeros[indexContador]) {
-		qtsVezesRepete+=1; 
-		}
-	}
-	return qtsVezesRepete;
-	}
+    let qtsVezesRepete = 0;
+    for (
+      let indexContador = 0;
+      indexContador < numeros.length;
+      indexContador += 1
+    ) {
+      if (verificarNumero === numeros[indexContador]) {
+        qtsVezesRepete += 1;
+      }
+    }
+    return qtsVezesRepete;
+  }
 }
 
-
-
-
-
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+const distancia1 = (Math.abs(mouse - cat1));
+const distancia2 = (Math.abs(mouse - cat2));
+
+	if (distancia1 < distancia2) {
+		return 'cat1';
+	} if (distancia1 > distancia2) {
+		return 'cat2';
+	} else (distancia1 === distancia2) 
+		return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
