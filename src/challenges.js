@@ -32,7 +32,23 @@ function footballPoints(numeroDeVitorias, numeroDeEmpates) {
 }
 
 // Desafio 6*************************************************
-function highestCount() {
+// primeira parte
+// eslint-disable-next-line sonarjs/cognitive-complexity
+function highestCount(numeros) {
+  let numeroMaior = numeros[0];
+  for (let i = 0; i < numeros.length; i += 1) {
+    if (numeros[i] > numeroMaior) {
+      numeroMaior = numeros[i];
+    }
+  }
+  // segunda parte
+  let contador = 0;
+  for (let i2 = 0; i2 < numeros.length; i2 += 1) {
+    if (numeroMaior === numeros[i2]) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
 
 // Desafio 7
@@ -50,6 +66,8 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+// refatorar
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function fizzBuzz(array) {
   let resultado = [];
   for (let index of array) {
