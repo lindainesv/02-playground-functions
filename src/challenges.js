@@ -60,13 +60,16 @@ function highestCount(numeros) {
         qtsVezesRepete += 1;
       }
     }
-    return qtsVezesRepete;
+    
   }
+	return qtsVezesRepete;
 }
 
+
 // Desafio 7
+//pesquisa: Math.abs recebe um número e retorna o valor absoluto dele
 function catAndMouse(mouse, cat1, cat2) {
-const distancia1 = (Math.abs(mouse - cat1));
+const distancia1 = (Math.abs(mouse - cat1)); 
 const distancia2 = (Math.abs(mouse - cat2));
 
 	if (distancia1 < distancia2) {
@@ -78,8 +81,21 @@ const distancia2 = (Math.abs(mouse - cat2));
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let resultado = [];
+
+  for(let index of array){  
+    if(index%3 === 0 && index%5 === 0){
+    resultado.push('fizzBuzz');
+    }else if(index%3 === 0){
+      resultado.push('fizz');
+    }else if(index%5 === 0){
+      resultado.push('buzz');
+    }else if(index%3 !== 0 && index%5 !== 0){
+      resultado.push('bug!');
+    }
+  }
+  return resultado;
 }
 
 // Desafio 9
