@@ -85,13 +85,73 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+// trocar todas as **vogais minúsculas por números**,
+// entao se a frase conter vogais deve-se troca-las por numero
+
+function encode(frase) {
+let fraseCodificada = '';
+	for (let i = 0; i < frase.length; i +=1 ) {
+		if(frase[i] === 'a') {
+			fraseCodificada += '1';	
+		} else if (frase[i] === 'e') {
+			fraseCodificada += '2';
+		} else if (frase[i] === 'i') {
+			fraseCodificada += '3';
+		} else if (frase[i] === 'o') {
+			fraseCodificada += '4';
+		} else if (frase[i] === 'u') {
+			fraseCodificada += '5';
+		} else {
+			fraseCodificada += frase[i];
+		}
+	}
+	return fraseCodificada;
 }
 
+function decode(frase) {
+  let fraseDecodificada = "";
+	for (let i = 0; i < frase.length; i +=1 ) {
+			if(frase[i] === '1') {
+				fraseDecodificada += 'a';	
+			} else if (frase[i] === '2') {
+				fraseDecodificada += 'e';
+			} else if (frase[i] === '3') {
+				fraseDecodificada += 'i';
+			} else if (frase[i] === '4') {
+				fraseDecodificada += 'o';
+			} else if (frase[i] === '5') {
+				fraseDecodificada += 'u';
+			} else {
+				fraseDecodificada += frase[i];
+			}
+	}
+	return fraseDecodificada;
+}
+
+
+
+
+
+
+
+
+
+/* function encode(valores) {
+let '';
+let vogaisMinusculas = ['a', 'e', 'i', 'o', 'u']
+let numeros =[1, 2, 3, 4, 5]
+
+for (let i = 0; i < valores.length; i +=1) {
+	const element = array[i];
+	
+}
+
+	for (let codificar of valores) {
+		if (codificar.replace(vogaisMinusculas, numeros)) {
+			'';
+		}
+	}
+} */
 // Desafio 10
 function techList() {
   // seu código aqui
