@@ -1,15 +1,19 @@
-function highestCount(array) {
-  let maior = array[0];
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] > maior) {
-      maior = array[index];
+function encode(string) {
+  let resultado = '';
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === 'a') {
+      resultado += '1';
+    } else if (string[index] === 'e') {
+      resultado += '2';
+    } else if (string[index] === 'i') {
+      resultado += '3';
+    } else if (string[index] === 'o') {
+      resultado += '4';
+    } else if (string[index] === 'u') {
+      resultado += '5';
+    } else {
+      resultado += string[index];
     }
   }
-  let contador = 0;
-  for (let secondIndex = 0; secondIndex < array.length; secondIndex += 1) {
-    if (maior === array[secondIndex]) {
-      contador += 1;
-    }
-  }
-  return contador;
+  return resultado;
 }
