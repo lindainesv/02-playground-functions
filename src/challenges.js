@@ -128,14 +128,6 @@ function decode(frase) {
 	return fraseDecodificada;
 }
 
-
-
-
-
-
-
-
-
 /* function encode(valores) {
 let '';
 let vogaisMinusculas = ['a', 'e', 'i', 'o', 'u']
@@ -152,10 +144,32 @@ for (let i = 0; i < valores.length; i +=1) {
 		}
 	}
 } */
+
+
 // Desafio 10
-function techList() {
-  // seu código aqui
+// Um array com nomes de tecnologias ;
+// - Um nome referente ao nome de uma pessoa.
+  
+// A função deverá retornar:
+// - 'Vazio!' se não receber parâmetro algum ;
+// - Um objeto para cada tecnologia do array, com a seguinte estrutura:
+
+function techList(tecnologias, nome ) {
+
+	let nomeTecnologias = [];
+
+	if (tecnologias.length	=== 0) {
+	return 'Vazio!';
+	}; tecnologias = tecnologias.sort();
+
+	for (let i = 0; i < tecnologias.length; i += 1) {
+		let lista = {tecnologias: tecnologias[i], nome: nome};
+		tecnologias.push(lista);
+	}
+	return nomeTecnologias;
 }
+
+
 
 module.exports = {
   calcArea,
