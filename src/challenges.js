@@ -136,15 +136,15 @@ let vogaisMinusculas = ['a', 'e', 'i', 'o', 'u']
 let numeros =[1, 2, 3, 4, 5]
 
 for (let i = 0; i < valores.length; i +=1) {
-	const element = array[i];
-	
+const element = array[i];
+
 }
 
-	for (let codificar of valores) {
-		if (codificar.replace(vogaisMinusculas, numeros)) {
-			'';
-		}
-	}
+for (let codificar of valores) {
+if (codificar.replace(vogaisMinusculas, numeros)) {
+'';
+}
+}
 } */
 
 // Desafio 10
